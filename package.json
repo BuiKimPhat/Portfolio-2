@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "EO Team",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "fullpage.js": "^3.0.2",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuiKimPhat/Portfolio-2.git"
+  },
+  "author": "EO Team",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/BuiKimPhat/Portfolio-2/issues"
+  },
+  "homepage": "https://github.com/BuiKimPhat/Portfolio-2#readme"
+}

@@ -4,14 +4,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/vendors/easings.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/vendors/scrolloverflow.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/style/index.css" />
+    <link rel="stylesheet" type="text/css" href="/style/navbar.css" />
     <title>EO Team - Home</title>
   </head>
   <body>
-    <% include partials/preloader.ejs %>
+    <div id="fullpage">
     <div id="body">
       <% include partials/nav.ejs %>
+          <div class="section fp-auto-height-responsive" data-anchor="part1">
+              <img src="/style/images/Background.png" alt='Background' id='Background' class="img-responsive img-fluid" ></img>
+          </div>
+          <div class='Team section fp-auto-height-responsive' data-anchor="part2" >
+              <img src="/style/images/homePage.png" alt='Team' id='Team' class="img-responsive img-fluid"></img>
+              <h1 class="text-center text-light">THIS IS THE TEAM</h1>
+          </div>
+          <div class='messSec section fp-auto-height-responsive' data-anchor="part3" >
+              <h1 class="titleMess text-center text-light">A MESSAGE FROM TEAM LEADER</h1>
+              <p class="para text-center text-light">
+                Hi, I'm <span style="color:#009950">Neo</span>. Nice to meet you. Ever since I first learned C in highschool, I've fallen in love with coding and technology in general. Together
+                with my friends and bros <span style="color:#009950">Leo</span> and <span style="color:#009950">Meo</span>, we created <span style="color:#009950">E.O team</span>.
+                We are quiet but confident, foolish but curious and is always looking for ways to improve our skills.
+              </p>
+          </div>
     </div>
-    <script src="/style/jsAnimation.js"></script>
+    </div>
+    <script>
+    $(document).ready(function() {
+      $("#body").fadeIn(1000);
+      $('#fullpage').fullpage({
+        anchors: ['part1', 'part2','part3'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['The Team', 'The Members', 'The Message'],
+        scrollBar:true
+      });
+      var active = location.pathname;
+      $(".nav-item a[href='" + active + "']").addClass("nav-active");
+    });
+    </script>
   </body>
 </html>
+<script>
+ if (document.images) {
+pic = new Image();
+pic2 = new Image();
+pic3 = new Image();
+pic.src="/style/images/meo.jpg";
+pic2.src="/style/images/leo.jpg";
+pic3.src="/style/images/neo.jpg";
+}
+</script>
