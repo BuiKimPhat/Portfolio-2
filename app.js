@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-
+var Barba = require('barba.js');
 app.set('view engine', 'ejs');
 
 app.use('/style', express.static('style'));

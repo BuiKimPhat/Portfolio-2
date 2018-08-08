@@ -17,23 +17,34 @@
     <div id="body">
       <% include partials/nav.ejs %>
       <div class="section" data-anchor='part1'>
-      <div class="row mems">
-        <div class="col meo">
-          <img src="/style/images/meo.jpg" class="img-fluid" />
-        </div>
-        <div class="col neo">
-          <img src="/style/images/neo.jpg" class="img-fluid" />
-        </div>
-        <div class="col leo">
-          <img src="/style/images/leo.jpg" class="img-fluid" />
+        <div class="mems">
+          <div class="meo">
+            <a href="#"><img src="/style/images/meo.jpg" class="img-fluid" /></a>
+          </div>
+          <div class="neo">
+            <a href="#"><img src="/style/images/neo.jpg" class="img-fluid" /></a>
+          </div>
+          <div class="leo">
+            <a href="#"><img src="/style/images/leo.jpg" class="img-fluid" /></a>
+          </div>
         </div>
       </div>
+      <div class="section" data-anchor='part2'>
+
+      </div>
+      <div class="section" data-anchor='part3'>
+
+      </div>
+      <div class="section" data-anchor='part4'>
+
       </div>
     </div>
     </div>
+    <script src="/style/whoAni.js"></script>
     <script>
     $('#fullpage').fullpage({
       anchors: ['part1', 'part2','part3','part4'],
+      sectionsColor: ['#00a94f'],
       navigation: true,
       navigationPosition: 'right',
       navigationTooltips: ['The Team', 'Meo', 'Neo','Leo'],

@@ -19,11 +19,31 @@ html,body {
   height: 100%;
 }
 .meo,.neo,.leo {
+  position: absolute;
+  width: 33.3333%;
+  height: 100%;
+  -webkit-transition: transform 0.8s ease, width 1s ease; /* Safari */
+  -moz-transition: transform 0.8s ease, width 1s ease;
+  -o-transition: transform 0.8s ease, width 1s ease;
+  transition: transform 0.8s ease, width 1s ease;
   padding: 0;
 }
-.row {
-  margin: 0;
+.neo {
+  left: 33.3333%;
+}
+.leo {
+  left: 66.6666%;
 }
 .mems {
+  overflow: hidden;
   height: 100%;
+  position: relative;
+}
+.meo:hover,.neo:hover,.leo:hover {
+    -ms-transform: scale(1.1, 1.1); /* IE 9 */
+    -webkit-transform: scale(1.1, 1.1); /* Safari */
+    transform: scale(1.1, 1.1);
+}
+.close {
+  width: 0;
 }

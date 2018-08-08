@@ -12,9 +12,6 @@ html,body {
   height: 100%;
 }
 
-#body {
-  display: none;
-}
 
 
 /* body */
@@ -83,12 +80,14 @@ html,body {
 .titleMess {
   border-bottom: 3px solid blue;
   font-size: 6.5vh;
+  color: #d7d7d7;
 }
 .messSec {
   background: linear-gradient(to right, #007a2f 0%, #27466b 100%);
 }
 .para {
   font-size: 6.5vw;
+  color: #d7d7d7;
 }
 
 @media screen and (min-width: 600px) {
@@ -104,6 +103,7 @@ html,body {
   left: 0;
   right: 0;
   margin: auto;
+  color: #d7d7d7;
 }
 .fp-tooltip {
   color: orange !important;

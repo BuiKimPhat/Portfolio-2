@@ -21,11 +21,11 @@
           </div>
           <div class='Team section fp-auto-height-responsive' data-anchor="part2" >
               <img src="/style/images/homePage.png" alt='Team' id='Team' class="img-responsive img-fluid"></img>
-              <h1 class="text-center text-light">THIS IS THE TEAM</h1>
+              <h1 class="text-center">THIS IS THE TEAM</h1>
           </div>
           <div class='messSec section fp-auto-height-responsive' data-anchor="part3" >
-              <h1 class="titleMess text-center text-light">A MESSAGE FROM TEAM LEADER</h1>
-              <p class="para text-center text-light">
+              <h1 class="titleMess text-center">A MESSAGE FROM TEAM LEADER</h1>
+              <p class="para text-center">
                 Hi, I'm <span style="color:#009950">Neo</span>. Nice to meet you. Ever since I first learned C in highschool, I've fallen in love with coding and technology in general. Together
                 with my friends and bros <span style="color:#009950">Leo</span> and <span style="color:#009950">Meo</span>, we created <span style="color:#009950">E.O team</span>.
                 We are quiet but confident, foolish but curious and is always looking for ways to improve our skills.
@@ -35,7 +35,6 @@
     </div>
     <script>
     $(document).ready(function() {
-      $("#body").fadeIn(1000);
       $('#fullpage').fullpage({
         anchors: ['part1', 'part2','part3'],
         navigation: true,
@@ -50,6 +49,7 @@
   </body>
 </html>
 <script>
+Barba.Pjax.start();
  if (document.images) {
 pic = new Image();
 pic2 = new Image();
