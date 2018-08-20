@@ -95,7 +95,9 @@ html,body {
     font-size: 4vh;
   }
 }
-
+.Team {
+  position: relative;
+}
 .Team h1 {
   font-size: 7vh;
   position: absolute;

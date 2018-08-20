@@ -1,5 +1,6 @@
-// Meo click
+var whoani = function(){
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
 
-$(".meo").click(function(){
-  
-});
+  });
+}
